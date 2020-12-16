@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Business Card Example</title>
+  <style>
+    body{
+      background-color: #EEE;
+    }
+    h1,h2,p,ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    #business-card{
+      background-color: #111;
+      width: 400px;
+      height: 200px;
+
+      
+    }
+    #business-card .name{
+     
+     float: left;
+    }
+    #business-card .info{
+      float: right;  
+      font-size:80%
+
+
+    }
+    #business-card .name h1{
+      color: white;
+      padding-top:55px;
+      margin-left: 35px;
+      ;
+    }
+    #business-card .name h2{
+      color: goldenrod;
+      padding-top: 5px;
+      margin-left: 40px;
+    }
+    #business-card .name small{
+      padding-left: 42px;
+      color: gray;
+      padding-top: 5px;
+    
+   
+    }
+
+    #business-card .info p{
+        color: white;
+       margin-top: -110px;
+       padding: 3px;
+        
+    }
+    #business-card .info li{
+      color: gray;
+     padding: 1px;
+    }
+    #business-card .info::before{
+        content:"";
+        display: block;
+        border-left: 3px solid white;
+        height: 110px;
+        margin-top: 50px;
+        width: 3px;
+        margin-left: -15px;
+        
+        
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="business-card">
+
+    <div class="name">
+      <h1>Firstname</h1>
+      <h2>LASTNAME</h2>
+      <small>web designer &#47; developer</small>
+       
+    </div>
+    <div class="info">
+      <p>12345 Some Street, City<br>State, Province, Country</p>
+       <ul>
+         <li> &#128222 +00 22 333444</li>
+         <li> &#128233 email@somemail.example</li>
+         <li> &#127757 www.exampledomain.example</li>
+       </ul>
+    </div>
+
+  </div>
+</body>
+</html>
